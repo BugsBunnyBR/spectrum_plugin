@@ -1,0 +1,10 @@
+enum ImageOrientation {
+  UP,
+  UP_MIRRORED,
+  BOTTOM,
+  BOTTOM_MIRRORED,
+  LEFT_MIRRORED,
+  RIGHT,
+  RIGHT_MIRRORED,
+  LEFT,
+}
