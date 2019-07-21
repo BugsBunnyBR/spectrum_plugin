@@ -33,7 +33,7 @@ PODS:
   - spectrum-folly (2019.01.21.00)
   - spectrum_plugin (0.0.1):
     - Flutter
-    - SpectrumKit
+    - SpectrumKit (~> 1.1.0)
   - SpectrumCore/Base (1.1.0):
     - spectrum-folly (~> 2019.01.21.00)
   - SpectrumCore/Plugins/Jpeg (1.1.0):
@@ -105,10 +105,10 @@ SPEC CHECKSUMS:
   mozjpeg: bbe5f12952c272e10063446feaf7ec09a800c5e3
   path_provider: f96fff6166a8867510d2c25fdcc346327cc4b259
   spectrum-folly: 7a893fae801f809e710d4d5a8325034131e0e949
-  spectrum_plugin: c9d3472021769c6592a219811a119ebb302263f4
+  spectrum_plugin: 97f487adb666073496ffbb56884f10e1436d49c2
   SpectrumCore: d295796b63522ec09fd3d72c2823f3e4469eadff
   SpectrumKit: 1c43fa1e562f48c760bffc87a5fe191880a0b418
 
-PODFILE CHECKSUM: 370289e38846faeec6d380523bb68ee54303f7cc
+PODFILE CHECKSUM: 3d53edb6d659e6fb2cffaa97fde6533c2fc1a8d0
 
-COCOAPODS: 1.7.4
+COCOAPODS: 1.7.5
