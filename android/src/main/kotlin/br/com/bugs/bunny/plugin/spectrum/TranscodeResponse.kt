@@ -24,7 +24,7 @@ class TranscodeResponse {
           "format" to format.identifier.toUpperCase(),
           "orientation" to orientation.name.toUpperCase(),
           // NOTE: There is no implementation available in the library for metadata :-/
-          "metadata" to metadata.toString(),
+          "metadata" to mapOf<String, Any>(),
           "size" to size.asMap(),
           "pixelSpecification" to pixelSpecification.name.toUpperCase()
       )

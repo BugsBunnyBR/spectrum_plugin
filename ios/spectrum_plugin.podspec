@@ -10,12 +10,13 @@ A Flutter plugin to handle image transformations.
                        DESC
   s.homepage         = 'http://example.com'
   s.license          = { :file => '../LICENSE' }
-  s.author           = { 'Your Company' => 'email@example.com' }
+  s.author           = { 'N/A' => 'juliocbcotta@gmail.com' }
   s.source           = { :path => '.' }
   s.source_files = 'Classes/**/*'
   s.public_header_files = 'Classes/**/*.h'
   s.dependency 'Flutter'
+  s.dependency 'SpectrumKit'
+
 
   s.ios.deployment_target = '8.0'
 end
-

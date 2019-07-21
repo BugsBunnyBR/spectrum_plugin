@@ -54,7 +54,7 @@ class _MyAppState extends State<MyApp> {
           height: size.height.floor(),
           width: size.width.floor()),
       rotate: RotateRequest(
-        degress: 0,
+        degrees: 0,
         flipHorizontally: false,
         flipVertically: false,
         forceUpOrientation: false,

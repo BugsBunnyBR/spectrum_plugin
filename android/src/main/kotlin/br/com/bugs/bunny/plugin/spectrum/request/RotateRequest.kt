@@ -4,14 +4,14 @@ import br.com.bugs.bunny.plugin.spectrum.asBoolean
 import br.com.bugs.bunny.plugin.spectrum.asInt
 import com.facebook.spectrum.requirements.RotateRequirement
 
-data class RotateRequest(val degress: Int,
+data class RotateRequest(val degrees: Int,
                          val flipVertically: Boolean,
                          val flipHorizontally: Boolean,
                          val forceUpOrientation: Boolean) {
 
   fun toRequirement(): RotateRequirement {
     return RotateRequirement(
-        degress,
+        degrees,
         flipHorizontally,
         flipVertically,
         forceUpOrientation
@@ -22,12 +22,12 @@ data class RotateRequest(val degress: Int,
 
     @Throws(Exception::class)
     fun build(data: Map<String, Any>): RotateRequest? {
-      val degress = data["degress"]
+      val degrees = data["degrees"]
       val flipHorizontally = data["flipHorizontally"]
       val flipVertically = data["flipVertically"]
       val forceUpOrientation = data["forceUpOrientation"]
 
-      if (degress == null ||
+      if (degrees == null ||
           flipHorizontally == null ||
           flipVertically == null ||
           forceUpOrientation == null
@@ -35,7 +35,7 @@ data class RotateRequest(val degress: Int,
         return null
       }
       return RotateRequest(
-          degress = degress.asInt(),
+          degrees = degrees.asInt(),
           flipHorizontally = flipHorizontally.asBoolean(),
           flipVertically = flipVertically.asBoolean(),
           forceUpOrientation = forceUpOrientation.asBoolean()
