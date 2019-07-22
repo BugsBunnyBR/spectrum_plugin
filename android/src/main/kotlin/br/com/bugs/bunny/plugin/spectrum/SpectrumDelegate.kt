@@ -5,8 +5,6 @@ import br.com.bugs.bunny.plugin.spectrum.request.TranscodeRequest
 import com.facebook.spectrum.EncodedImageSink
 import com.facebook.spectrum.EncodedImageSource
 import com.facebook.spectrum.ISpectrum
-import com.facebook.spectrum.image.ImageSize
-import com.facebook.spectrum.image.ImageSpecification
 import com.facebook.spectrum.options.TranscodeOptions
 import com.facebook.spectrum.requirements.EncodeRequirement
 import io.flutter.Log
@@ -44,7 +42,6 @@ class SpectrumDelegateImpl(private val spectrum: ISpectrum, private val context:
             builder.build(),
             tr.callerContext)
         return TranscodeResponse.Builder.build(sr)
-
       }
 
     }

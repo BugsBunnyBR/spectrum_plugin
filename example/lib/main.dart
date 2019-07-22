@@ -32,7 +32,7 @@ class _MyAppState extends State<MyApp> {
     String result = '';
     final sourceName = source.path.split('/').last;
     final tempDir = await getTemporaryDirectory();
-    File sink = File(tempDir.path + '/' + sourceName);
+    File sink = File(tempDir.path + '/different_name_' + sourceName);
     final size = MediaQuery.of(context).size;
 
     final tr = TranscodeRequest(

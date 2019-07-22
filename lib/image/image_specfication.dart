@@ -9,7 +9,7 @@ class ImageSpecification {
   final ImageChromaSamplingMode chromaSamplingMode;
   final EncodedImageFormat format;
   final ImageOrientation orientation;
-  final String metadata;
+  final Map<String, dynamic> metadata;
   final ImageSize size;
   final PixelSpecification pixelSpecification;
 
@@ -36,13 +36,13 @@ class ImageSpecification {
         ", chromaSamplingMode=" +
         chromaSamplingMode.toString() +
         ", metadata=" +
-        (metadata ?? "") +
+        (metadata.toString() ?? "") +
         '}';
   }
 
   static ImageSpecification parse(Map<String, dynamic> map) {
     return ImageSpecification(
-      metadata: map['metadata'],
+      metadata: Map<String, dynamic>.from(map['metadata'] ?? Map()),
       size: ImageSize.parse(
         Map<String, dynamic>.from(map['size'] ?? Map()),
       ),
